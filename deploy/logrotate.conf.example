@@ -1,0 +1,12 @@
+/var/www/schedule/storage/logs/*.log {
+    weekly
+    rotate 8
+    maxsize 10M
+    missingok
+    notifempty
+    compress
+    delaycompress
+    copytruncate
+    su www-data www-data
+    create 0600 www-data www-data
+}

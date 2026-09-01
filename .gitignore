@@ -1,0 +1,45 @@
+# Локальная конфигурация
+/inc/config.local.php
+
+# Рабочая база данных SQLite
+/storage/*.sqlite
+/storage/*.sqlite3
+/storage/*.db
+/storage/*.sqlite-*
+/storage/*.sqlite3-*
+
+# Состояние установки
+/storage/install.enabled
+/storage/installed.lock
+/storage/*.failed-*
+
+# Журналы и временные данные
+/storage/logs/
+/storage/tmp/
+/storage/cache/
+/storage/sessions/
+
+# Резервные копии
+*.bak
+*.backup
+*.old
+
+# Архивы выпуска
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Отчёты аудита и recovery
+*-audit.txt
+*independent-audit*
+*recovery*
+
+# IDE / ОС
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

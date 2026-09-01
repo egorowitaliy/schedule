@@ -1,0 +1,23 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="10" width="48" height="46" rx="10" fill="#2563EB"/>
+  
+  <!-- крепления -->
+  <rect x="16" y="4" width="6" height="12" rx="3" fill="#93C5FD"/>
+  <rect x="42" y="4" width="6" height="12" rx="3" fill="#93C5FD"/>
+
+  <!-- внутренняя панель -->
+  <rect x="14" y="18" width="36" height="30" rx="6" fill="#EFF6FF"/>
+
+  <!-- сетка -->
+  <rect x="18" y="22" width="8" height="6" rx="2" fill="#2563EB"/>
+  <rect x="28" y="22" width="8" height="6" rx="2" fill="#60A5FA"/>
+  <rect x="38" y="22" width="8" height="6" rx="2" fill="#93C5FD"/>
+
+  <rect x="18" y="30" width="8" height="6" rx="2" fill="#93C5FD"/>
+  <rect x="28" y="30" width="8" height="6" rx="2" fill="#2563EB"/>
+  <rect x="38" y="30" width="8" height="6" rx="2" fill="#60A5FA"/>
+
+  <rect x="18" y="38" width="8" height="6" rx="2" fill="#60A5FA"/>
+  <rect x="28" y="38" width="8" height="6" rx="2" fill="#93C5FD"/>
+  <rect x="38" y="38" width="8" height="6" rx="2" fill="#2563EB"/>
+</svg>

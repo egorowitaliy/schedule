@@ -1,0 +1,26 @@
+# Этот nginx принимает трафик только от отдельного обратного прокси-сервера,
+# который предоставляет посетителям HTTPS. Ограничьте порт 8080 межсетевым экраном.
+server {
+    listen 8080;
+    listen [::]:8080;
+    server_name schedule.internal.example;
+
+    root /var/www/schedule/public;
+    index index.php;
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        include /etc/nginx/fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+    }
+
+    location ~ /\. {
+        deny all;
+    }
+}
